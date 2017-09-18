@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mazaiting.verifyview.MainActivity"
+    >
+
+  <com.mazaiting.VerifyView
+      android:id="@+id/verifyView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:codeTextSize="20sp"
+      app:codeBackground="@color/colorAccent"
+      app:codeLength="6"
+      app:isContainChar="true"
+      app:pointNum="200"
+      app:lineNum="5"
+      />
+
+  <EditText
+      android:id="@+id/editText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+  <Button
+      android:onClick="verify"
+      android:text="验证"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+</LinearLayout>
+
